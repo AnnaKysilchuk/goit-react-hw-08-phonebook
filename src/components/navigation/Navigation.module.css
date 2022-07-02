@@ -1,0 +1,29 @@
+.navigation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 64px;
+    padding: 7px 48px;
+    color: #fff;
+    background-color: rgb(65, 65, 65);
+    box-shadow: 0px 2px 4px -1px rgba(65, 65, 65, 0.3), 0px 5px 5px 0px rgba(65, 65, 65, 0.2),
+        0px 10px 10px 0px rgba(65, 65, 65, 0.15);
+}
+
+.navigationLink {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigationLink:hover {
+    color: #00ffff;
+}
+
+.navigationLinkActive {
+    font-size: 18px;
+    text-decoration: none;
+    color: aqua;
+}

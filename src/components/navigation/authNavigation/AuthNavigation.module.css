@@ -1,0 +1,31 @@
+.navigationLink {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navigationLink:not(:last-child) {
+    font-size: 24px;
+    margin-right: 50px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    outline: 1px solid;
+}
+
+.navigationLink:hover {
+    color: #00ffff;
+}
+
+.navigationLinkActive {
+    font-size: 18px;
+    text-decoration: none;
+    color: aqua;
+}
+
+.navigationLinkActive:not(:last-child) {
+    font-size: 24px;
+    margin-right: 50px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    outline: 1px solid;
+}

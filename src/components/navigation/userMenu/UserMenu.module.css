@@ -1,0 +1,41 @@
+.userMenuThumb {
+    display: flex;
+}
+
+.userMenuInfo {
+    margin-right: 3rem;
+}
+
+.userMenuName {
+    font-size: 18px;
+}
+
+.userMenuName {
+    font-style: italic;
+}
+
+.userName {
+    margin-left: 0.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.userMenuEmail {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.userMenuBtn {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: 1px solid;
+}
+
+.userMenuBtn:hover {
+    color: #00ffff;
+}
