@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/HomePage.b78173cc.chunk.css","mappings":"AAAA,gCAGI,iBAAkB,CADlB,iBAAkB,CADlB,WAGJ","sources":["components/pages/homePage/HomePage.module.css"],"sourcesContent":[".homePageThumb {\n    width: 100vw;\n    text-align: center;\n    font-size: x-large;\n}\n"],"names":[],"sourceRoot":""}
