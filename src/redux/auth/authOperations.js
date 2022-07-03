@@ -57,7 +57,7 @@ export const fetchCurrentUser = createAsyncThunk(
 
         token.set(persistedToken);
         try {
-            const { data } = await axios.get(`${BASE_URL}/users/current/`);
+            const { data } = await axios.get(`${BASE_URL}/users/current`);
             return data;
         } catch (error) {
             Notify.failure('Something went wrong:( Try again;)');

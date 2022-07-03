@@ -12,6 +12,6 @@ const PublicRoute = ({ restricted = false, redirectTo }) => {
 export default PublicRoute;
 
 PublicRoute.propTypes = {
-    restricted: PropTypes.bool.isRequired,
-    redirectTo: PropTypes.string.isRequired,
+    restricted: PropTypes.bool,
+    redirectTo: PropTypes.string,
 };

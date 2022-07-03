@@ -44,12 +44,11 @@ const App = () => {
             <main>
                 <Suspense fallback={<Loader />}>
                     <Routes>
-                        <Route path="*" element={<Navigate to="/" />} />
-                        <Route element={<PublicRoute redirectTo="/contacts" restricted />}>
+                        <Route element={<PublicRoute />}>
                             <Route path="/" element={<HomePage />} />
                         </Route>
 
-                        <Route element={<PublicRoute redirectTo="/" restricted />}>
+                        <Route element={<PublicRoute restricted />}>
                             <Route path="/register" element={<RegisterPage />} />
                         </Route>
 
@@ -57,15 +56,15 @@ const App = () => {
                             <Route path="/login" element={<LoginPage />} />
                         </Route>
 
-                        <Route element={<PrivateRoute redirectTo="/login" />}>
+                        <Route element={<PrivateRoute redirectTo="/login" restricted />}>
                             <Route path="/contacts" element={<ContactsPage />} />
                         </Route>
 
-                        <Route element={<PrivateRoute redirectTo="/login" />}>
+                        <Route element={<PrivateRoute redirectTo="/login" restricted />}>
                             <Route path="/add" element={<AddContactPage />} />
                         </Route>
 
-                        <Route element={<PublicRoute redirectTo="/" restricted />}>
+                        <Route element={<PublicRoute redirectTo="/" />}>
                             <Route element={<NotFoundPage />} />
                         </Route>
                     </Routes>

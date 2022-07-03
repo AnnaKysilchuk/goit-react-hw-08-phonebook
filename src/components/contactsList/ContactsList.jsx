@@ -23,10 +23,12 @@ export const ContactsList = () => {
     return (
         <div>
             <table>
-                {filteredContacts &&
-                    filteredContacts.map(({ id, name, number }) => (
-                        <ContactsListItem key={id} name={name} number={number} id={id} />
-                    ))}
+                <tbody>
+                    {filteredContacts &&
+                        filteredContacts.map(({ id, name, number }) => (
+                            <ContactsListItem key={id} name={name} number={number} id={id} />
+                        ))}
+                </tbody>
             </table>
         </div>
     );
