@@ -44,6 +44,7 @@ const App = () => {
             <main>
                 <Suspense fallback={<Loader />}>
                     <Routes>
+                        <Route path="*" element={<Navigate to="login" />} />
                         <Route element={<PublicRoute />}>
                             <Route path="/" element={<HomePage />} />
                         </Route>
