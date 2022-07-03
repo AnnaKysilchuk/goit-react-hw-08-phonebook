@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
@@ -31,6 +31,7 @@ const NotFoundPage = lazy(() =>
 
 const App = () => {
     const dispatch = useDispatch();
+    const location = useLocation();
 
     useEffect(() => {
         dispatch(fetchCurrentUser());
@@ -42,9 +43,9 @@ const App = () => {
                 <Navigation />
             </header>
             <main>
+                {location.pathname === '/goit-react-hw-08-phonebook/' && <Navigate to="/" />}
                 <Suspense fallback={<Loader />}>
                     <Routes>
-                        <Route path="*" element={<Navigate to="login" />} />
                         <Route element={<PublicRoute />}>
                             <Route path="/" element={<HomePage />} />
                         </Route>
