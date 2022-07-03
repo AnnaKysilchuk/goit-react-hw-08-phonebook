@@ -31,7 +31,7 @@ const NotFoundPage = lazy(() =>
 
 const App = () => {
     const dispatch = useDispatch();
-    const location = useLocation();
+    // const location = useLocation();
 
     useEffect(() => {
         dispatch(fetchCurrentUser());
@@ -43,7 +43,7 @@ const App = () => {
                 <Navigation />
             </header>
             <main>
-                {location.pathname === '/goit-react-hw-08-phonebook/' && <Navigate to="/" />}
+                {/* {location.pathname === '/goit-react-hw-08-phonebook/' && <Navigate to="/" />} */}
                 <Suspense fallback={<Loader />}>
                     <Routes>
                         <Route element={<PublicRoute />}>
